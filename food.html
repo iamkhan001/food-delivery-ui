@@ -6,24 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/food.css">
     <link rel="stylesheet" href="assets/fa/css/all.css">
-
     <title>Food Delivery</title>
 
     <link href="assets/img/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
 
   </head>
   <body>
 
     <header id="header" class="header header-hide sticky">
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Makan Rider</a>
+            <a class="navbar-brand" href="index.html">Makan Rider</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,40 +42,36 @@
                         <a class="nav-link " href="restaurents.html"><i class="fa fa-store icon"></i>Restaurents</a>
                       </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="help.html"><i class="fa fa-life-ring icon"></i>Help</a>
+                        <a class="nav-link" href="help.html"><i class="fa fa-life-ring icon"></i>Help</a>
                     </li>           
-                  </ul>
+                </ul>
              
-              <div>
-                <ul class="navbar-nav mr-auto" >
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
-                    </li> 
-                    <li class="nav-item">
-                        <div class="btn-group">
-                            <a class="nav-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-user icon"></i>Imran Khan
+            <div>
+            <div class="collapse navbar-collapse" >                
+                    <ul class="navbar-nav mr-auto" >
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:login()">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:register()">Register</a>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a href="javascript:toggle()" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user icon" aria-hidden="true"></i> Imran Khan
                             </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Profile</a>
-                                <a class="dropdown-item" href="#">Orders</a>
-                                <a class="dropdown-item" href="#">Favorites</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Logout</a>
-                            </div>                        
-                          </div>                   
-                    </li>   
-                    <li class="nav-item">
-                        <a class="nav-link s" href="cart.html"><i class="fa fa-shopping-bag icon" aria-hidden="true"></i>Cart  <span class="cart-count ">(3)</span> </a>
-                    </li>  
-                  </ul>  
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="profile.html">Profile</a>
+                            <a class="dropdown-item" href="profile.html">Orders</a>
+                            <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:logout()">Logout</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html"><i class="fa fa-shopping-bag icon" aria-hidden="true"></i>Cart <span>(3)</span></a>
+                        </li>  
+                    </ul>   
               </div>
-                     
-            </div>
-        </nav>
+            </nav>
     
     </header>
 
@@ -92,7 +87,7 @@
 
           
                 <div class="d-flex justify-content-end flex-grow"  >                     
-                    <div class="team-block bottom">
+                    <div class="team-block ">
                         <img src="assets/img/sushi.png" class="img-head" alt="img">
                     </div>
                 </div>
@@ -105,7 +100,7 @@
   
         <div class="container" >
             <div class="row">
-                <div class="d-flex justify-content-start" style="padding: 10px;">
+                <div class="d-flex justify-content-start" style="padding: 10px; margin-left: 15px">
 
                     <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style=" width: 600px !important; margin: 15px;" aria-placeholder="Select Category" >
                         <option value="Singaporian">Singaporian</option>
@@ -123,231 +118,10 @@
                         <input class="form-control mr-sm-2 m-small" type="search" placeholder="Search Food" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0 " style="margin-top: 5px;" type="submit"><i class="fa fa-search "></i></button>
                     </form> 
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-secondary dropdown-toggle m-small" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Sort
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Relavence</a>
-                            <a class="dropdown-item" href="#">Most Popular</a>
-                            <a class="dropdown-item" href="#">Low Price</a>
-                            <a class="dropdown-item" href="#">Name</a>
-                        </div>
-                    </div>  
                 </div>  
             </div>
               
-            <div class="row ">
-                
-                <div class="row">
-
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" role="button" ><i class="fa fa-plus mr-1 "></i>Add</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" class="count-btn" role="button" ><i class="fa fa-plus "></i></a>
-                                    <span class="count-border">3</span>
-                                    <a href="#" class="count-btn" role="button" ><i class="fa fa-minus "></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" role="button" ><i class="fa fa-plus  mr-1 "></i>Add</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" role="button" ><i class="fa fa-plus  mr-1 "></i>Add</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" role="button" ><i class="fa fa-plus  mr-1 "></i>Add</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" role="button" ><i class="fa fa-plus  mr-1 "></i>Add</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" role="button" ><i class="fa fa-plus mr-1 "></i>Add</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" role="button" ><i class="fa fa-plus mr-1"></i>Add</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" role="button" ><i class="fa fa-plus  mr-1"></i>Add</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" role="button" ><i class="fa fa-plus  mr-1"></i>Add</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" role="button" ><i class="fa fa-plus  mr-1"></i>Add</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class=" card block-food">
-                            <div class="table">
-                                <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                                <h3>Noodles</h3>
-                                <h5>Restaurent</h5>                           
-                            </div>                     
-                            <div class="d-flex flex-row" >
-                                <div class="d-flex flex-row" style="width: 50%;">
-                                    <h4>$250</h4>    
-                                </div>
-                                <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                    <a href="#" role="button" ><i class="fa fa-plus  mr-1"></i>Add</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row " id="food-content">
 
             </div>
             <div class="d-flex flex-row-reverse">
@@ -372,7 +146,7 @@
               </nav>
            </div>
         </div>
-      </section>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -417,15 +191,15 @@
     </footer>
 
     <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+
+    <script src="assets/js/popper.js"></script>
     <script src="assets/vendor/superfish/superfish.min.js"></script>
+
     <script src="assets/vendor/wow/wow.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
-
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/home.js"></script>
+    <script src="assets/js/food.js"></script>
 
   </body>
 </html>

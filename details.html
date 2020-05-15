@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/food.css">
+    <link rel="stylesheet" href="assets/fa/css/all.css">
+
+    <title>Food Delivery</title>
+
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <header id="header" class="header header-hide sticky">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Makan Rider</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                      <a class="nav-link " href="index.html"><i class="fa fa-hamburger icon"></i>Home</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link" href="offers.html"><i class="fa fa-tag icon"></i>Offers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="food.html"><i class="fa fa-utensils icon"></i>Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="restaurents.html"><i class="fa fa-store icon"></i>Restaurents</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html"><i class="fa fa-life-ring icon"></i>Help</a>
+                    </li>           
+                </ul>
+             
+            <div>
+            <div class="collapse navbar-collapse" >                
+                    <ul class="navbar-nav mr-auto" >
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:login()">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:register()">Register</a>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a href="javascript:toggle()" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user icon" aria-hidden="true"></i> Imran Khan
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="profile.html">Profile</a>
+                            <a class="dropdown-item" href="profile.html">Orders</a>
+                            <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:logout()">Logout</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html"><i class="fa fa-shopping-bag icon" aria-hidden="true"></i>Cart <span>(3)</span></a>
+                        </li>  
+                    </ul>   
+              </div>
+            </nav>
+    
+    </header>
+
+
+    <section id="food-menu" class="padd-section text-center wow fadeInUp home-padding" style="background-color: #F0F8FF;" >
+  
+      <div class="container" >
+        <div class="row" style="margin-top: 20px;">
+          <div class="col-md-3">
+              <div class="profile-img">
+                  <img src="assets/img/kfc.png" alt=""/>
+              </div>
+          </div>
+          <div class="col-md-9">
+              <div class="profile-head" style="margin-top: 20px;">
+                          <h3 style="text-align: left;">
+                              KFC Singapore
+                          </h3>
+                          <h6 style="text-align: left;">
+                            1 Northpoint Drive, South Wing of Northpoint City, #01-173/174, Singapore 768019
+                          </h6>
+              </div>
+        </div>
+        <div>
+          <div class="row px-4 mt-4">
+            <h4>
+              Food Categories
+            </h4>
+         </div>
+          <div class="row px-4 mt-2">
+              <button type="button" class="btn btn-success mr-2 ">All</button>
+              <button type="button" class="btn btn-outline-success  mr-2  ">Singaporian</button>
+              <button type="button" class="btn btn-outline-success  mr-2  ">Chinese</button>
+              <button type="button" class="btn btn-outline-success  mr-2  ">Japnese</button>
+              <button type="button" class="btn btn-outline-success  mr-2  ">Indian</button>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-6 col-lg-3">
+            <div class=" card block-food">
+                <div class="table">
+                    <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                    <h3>Noodles</h3>
+                    <h5>Restaurent</h5>                           
+                </div>                     
+                <div class="d-flex flex-row" >
+                    <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                        <div>
+                            <small class="offer-old-amont">$250</small>  
+                            <br>  
+                            <h4 class="offer-new-amount">$250</h4>    
+                        </div>                                    
+                    </div>
+                    <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                       <div class="row add-btns">
+                        <a href="#" class="count-btn" role="button" ><i class="fa fa-plus "></i></a>
+                        <span class="count-border">3</span>
+                        <a href="#" class="count-btn" role="button" ><i class="fa fa-minus "></i></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class=" card block-food">
+                  <div class="table">
+                      <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                      <h3>Noodles</h3>
+                      <h5>Restaurent</h5>                           
+                  </div>                     
+                  <div class="d-flex flex-row" >
+                      <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                          <h4>$250</h4>    
+                      </div>
+                      <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                          <a href="#" class="count-btn" role="button" ><i class="fa fa-plus "></i></a>
+                          <span class="count-border">3</span>
+                          <a href="#" class="count-btn" role="button" ><i class="fa fa-minus "></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class=" card block-food">
+                  <div class="table">
+                      <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                      <h3>Noodles</h3>
+                      <h5>Restaurent</h5>                           
+                  </div>                     
+                  <div class="d-flex flex-row" >
+                      <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                          <h4>$250</h4>    
+                      </div>
+                      <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                          <a href="#" role="button" ><i class="fa fa-plus  mr-1 "></i>Add</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class=" card block-food">
+                  <div class="table">
+                      <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                      <h3>Noodles</h3>
+                      <h5>Restaurent</h5>                           
+                  </div>                     
+                  <div class="d-flex flex-row" >
+                      <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                          <h4>$250</h4>    
+                      </div>
+                      <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                          <a href="#" role="button" ><i class="fa fa-plus  mr-1 "></i>Add</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class=" card block-food">
+                <div class="table">
+                    <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                    <h3>Noodles</h3>
+                    <h5>Restaurent</h5>                           
+                </div>                     
+                <div class="d-flex flex-row" >
+                    <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                        <div>
+                            <small class="offer-old-amont">$250</small>  
+                            <br>  
+                            <h4 class="offer-new-amount">$250</h4>    
+                        </div>                                    
+                    </div>
+                    <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                       <div class="row add-btns">
+                        <a href="#" class="count-btn" role="button" ><i class="fa fa-plus "></i></a>
+                        <span class="count-border">3</span>
+                        <a href="#" class="count-btn" role="button" ><i class="fa fa-minus "></i></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class=" card block-food">
+                  <div class="table">
+                      <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                      <h3>Noodles</h3>
+                      <h5>Restaurent</h5>                           
+                  </div>                     
+                  <div class="d-flex flex-row" >
+                      <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                          <h4>$250</h4>    
+                      </div>
+                      <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                          <a href="#" class="count-btn" role="button" ><i class="fa fa-plus "></i></a>
+                          <span class="count-border">3</span>
+                          <a href="#" class="count-btn" role="button" ><i class="fa fa-minus "></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class=" card block-food">
+                  <div class="table">
+                      <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                      <h3>Noodles</h3>
+                      <h5>Restaurent</h5>                           
+                  </div>                     
+                  <div class="d-flex flex-row" >
+                      <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                          <h4>$250</h4>    
+                      </div>
+                      <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                          <a href="#" role="button" ><i class="fa fa-plus  mr-1 "></i>Add</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class=" card block-food">
+                  <div class="table">
+                      <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                      <h3>Noodles</h3>
+                      <h5>Restaurent</h5>                           
+                  </div>                     
+                  <div class="d-flex flex-row" >
+                      <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                          <h4>$250</h4>    
+                      </div>
+                      <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                          <a href="#" role="button" ><i class="fa fa-plus  mr-1 "></i>Add</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class=" card block-food">
+                <div class="table">
+                    <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                    <h3>Noodles</h3>
+                    <h5>Restaurent</h5>                           
+                </div>                     
+                <div class="d-flex flex-row" >
+                    <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                        <div>
+                            <small class="offer-old-amont">$250</small>  
+                            <br>  
+                            <h4 class="offer-new-amount">$250</h4>    
+                        </div>                                    
+                    </div>
+                    <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                       <div class="row add-btns">
+                        <a href="#" class="count-btn" role="button" ><i class="fa fa-plus "></i></a>
+                        <span class="count-border">3</span>
+                        <a href="#" class="count-btn" role="button" ><i class="fa fa-minus "></i></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class=" card block-food">
+                  <div class="table">
+                      <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                      <h3>Noodles</h3>
+                      <h5>Restaurent</h5>                           
+                  </div>                     
+                  <div class="d-flex flex-row" >
+                      <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                          <h4>$250</h4>    
+                      </div>
+                      <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                          <a href="#" class="count-btn" role="button" ><i class="fa fa-plus "></i></a>
+                          <span class="count-border">3</span>
+                          <a href="#" class="count-btn" role="button" ><i class="fa fa-minus "></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class=" card block-food">
+                  <div class="table">
+                      <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                      <h3>Noodles</h3>
+                      <h5>Restaurent</h5>                           
+                  </div>                     
+                  <div class="d-flex flex-row" >
+                      <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                          <h4>$250</h4>    
+                      </div>
+                      <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                          <a href="#" role="button" ><i class="fa fa-plus  mr-1 "></i>Add</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class=" card block-food">
+                  <div class="table">
+                      <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
+                      <h3>Noodles</h3>
+                      <h5>Restaurent</h5>                           
+                  </div>                     
+                  <div class="d-flex flex-row" >
+                      <div class="d-flex flex-row bottom_left" style="width: 50%;">
+                          <h4>$250</h4>    
+                      </div>
+                      <div class="d-flex flex-row-reverse bottom_right" style="width: 50%;">
+                          <a href="#" role="button" ><i class="fa fa-plus  mr-1 "></i>Add</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+            
+
+      </div>
+  </section>         
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+    
+            <div class="col-md-12 col-lg-4">
+              <div class="footer-logo">
+                <a class="navbar-brand" href="#">Food Delivery</a>
+                <p>Here will be decription</p>
+              </div>
+            </div>
+    
+            <div class="col-md-12 col-lg-4">
+                <div class="list-menu">
+    
+                <h4>Support</h4>
+    
+                <ul class="list-unstyled">
+                  <li><a href="#">faq</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+    
+              </div>
+            </div>
+    
+            <div class="col-sm-6 col-md-3 col-lg-2">
+              <div class="list-menu">
+    
+                <h4>Abou Us</h4>
+    
+                <ul class="list-unstyled">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+    
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+    </footer>
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/vendor/superfish/superfish.min.js"></script>
+
+    <script src="assets/vendor/wow/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

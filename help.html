@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/food.css">
     <link rel="stylesheet" href="assets/fa/css/all.css">
 
@@ -20,63 +20,59 @@
   <body>
 
     <header id="header" class="header header-hide sticky">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Makan Rider</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                      <a class="nav-link " href="index.html"><i class="fa fa-hamburger icon"></i>Home</a>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Makan Rider</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item ">
+                    <a class="nav-link " href="index.html"><i class="fa fa-hamburger icon"></i>Home</a>
+                  </li>
+                  <li class="nav-item  ">
+                      <a class="nav-link" href="offers.html"><i class="fa fa-tag icon"></i>Offers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="food.html"><i class="fa fa-utensils icon"></i>Food</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="restaurents.html"><i class="fa fa-store icon"></i>Restaurents</a>
                     </li>
-                    <li class="nav-item  ">
-                        <a class="nav-link" href="offers.html"><i class="fa fa-tag icon"></i>Offers</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="food.html"><i class="fa fa-utensils icon"></i>Food</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="restaurents.html"><i class="fa fa-store icon"></i>Restaurents</a>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="help.html"><i class="fa fa-life-ring icon"></i>Help</a>
+                  </li>           
+              </ul>
+           
+          <div>
+          <div class="collapse navbar-collapse" >                
+                  <ul class="navbar-nav mr-auto" >
+                      <li class="nav-item">
+                          <a class="nav-link" href="javascript:login()">Login</a>
                       </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="help.html"><i class="fa fa-life-ring icon"></i>Help</a>
-                    </li>           
-                  </ul>
-             
-              <div>
-                <ul class="navbar-nav mr-auto" >
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
-                    </li> 
-                    <li class="nav-item">
-                        <div class="btn-group">
-                            <a class="nav-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-user icon"></i>Imran Khan
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Profile</a>
-                                <a class="dropdown-item" href="#">Orders</a>
-                                <a class="dropdown-item" href="#">Favorites</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Logout</a>
-                            </div>                        
-                          </div>                   
-                    </li>   
-                    <li class="nav-item">
-                        <a class="nav-link " href="cart.html"><i class="fa fa-shopping-bag icon" aria-hidden="true"></i>Cart  <span class="cart-count ">(3)</span> </a>
-                    </li>  
-                  </ul>  
-              </div>
-                     
+                      <li class="nav-item">
+                          <a class="nav-link" href="javascript:register()">Register</a>
+                      </li> 
+                      <li class="nav-item dropdown">
+                          <a href="javascript:toggle()" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fa fa-user icon" aria-hidden="true"></i> Imran Khan
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="profile.html">Profile</a>
+                          <a class="dropdown-item" href="profile.html">Orders</a>
+                          <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="javascript:logout()">Logout</a>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="cart.html"><i class="fa fa-shopping-bag icon" aria-hidden="true"></i>Cart <span>(3)</span></a>
+                      </li>  
+                  </ul>   
             </div>
-        </nav>
-    
-    </header>
+          </nav>
+  
+  </header>
 
     <section id="team" class="text-center wow fadeInUp home-padding" style="background-color: #171A29;" >
 
@@ -90,7 +86,7 @@
 
           
                 <div class="d-flex justify-content-end flex-grow"  >                     
-                    <div class="team-block bottom">
+                    <div class="team-block ">
                         <img src="assets/img/order-food.png" class="img-head" alt="img">
                     </div>
                 </div>
@@ -155,8 +151,8 @@
     </footer>
 
     <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.js"></script>
     <script src="assets/vendor/superfish/superfish.min.js"></script>
 
     <script src="assets/vendor/wow/wow.min.js"></script>

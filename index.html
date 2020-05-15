@@ -48,10 +48,10 @@
               <div>
                 <ul class="navbar-nav mr-auto" >
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Login</a>
+                      <a class="nav-link" data-toggle="modal" data-target="#login-modal">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
+                        <a class="nav-link" data-toggle="modal" data-target="#register-modal">Register</a>
                     </li> 
                     <li class="nav-item">
                         <div class="btn-group">
@@ -78,31 +78,31 @@
     
     </header>
 
-    <section id="team" class="text-center wow fadeInUp home-padding" style="background-color: #171A29;" >
+    <section  class="text-center wow fadeInUp home-padding" style="background-color: #171A29;" >
 
         <div class="container">
             <div class="row" >
           
                 <div class="col-md-6 col-md-4 col-lg-3">
-                    <div class="team-block bottom">
+                    <div class="team-block ">
                         <img src="assets/img/offers/offer-1.png" class="img-responsive" alt="img">
                     </div>
                 </div>
           
                 <div class="col-md-6 col-md-4 col-lg-3">
-                    <div class="team-block bottom">
+                    <div class="team-block ">
                         <img src="assets/img/offers/offer-2.jpeg" class="img-responsive" alt="img">
                     </div>
                 </div>
           
                 <div class="col-md-6 col-md-4 col-lg-3">
-                    <div class="team-block bottom">
+                    <div class="team-block ">
                         <img src="assets/img/offers/offer-3.jpeg" class="img-responsive" alt="img">
                     </div>
                 </div>
           
                 <div class="col-md-6 col-md-4 col-lg-3">
-                    <div class="team-block bottom">
+                    <div class="team-block ">
                         <img src="assets/img/offers/offer-4.jpeg" class="img-responsive" alt="img">
                     </div>
                 </div>
@@ -121,7 +121,7 @@
             <div class="row">
     
                 <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
+                    <div class=" card block-rest">
                     <div class="table">
                         <img src="assets/img/offers/offer-3.jpeg" class="img-responsive food-img" alt="img">
                         <h3>Restaurent</h3>
@@ -132,7 +132,7 @@
                 </div>
         
                 <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
+                    <div class=" card block-rest">
                     <div class="table">
                         <img src="assets/img/offers/offer-3.jpeg" class="img-responsive food-img" alt="img">
                         <h3>Restaurent</h3>
@@ -143,7 +143,7 @@
                 </div>
     
                 <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
+                    <div class=" card block-rest">
                     <div class="table">
                         <img src="assets/img/offers/offer-3.jpeg" class="img-responsive food-img" alt="img">
                         <h3>Restaurent</h3>
@@ -154,7 +154,7 @@
                 </div>
     
                 <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food" style="background-color: azure;">
+                    <div class=" card block-rest" style="background-color: azure;">
                         <div class="table">
                             <img src="assets/img/offers/offer-3.jpeg" class="img-responsive food-img" alt="img">
                             <h3>&nbsp;</h3>
@@ -168,7 +168,7 @@
         </div>
     </section>
 
-    <section id="food-menu" class="padd-section text-center wow fadeInUp content-padding" style="background-color: #F0F8FF;" >
+    <section class="padd-section text-center wow fadeInUp content-padding" style="background-color: #F0F8FF;" >
   
         <div class="container" >
             <div class="text-center">
@@ -178,176 +178,126 @@
  
             <div class="row">
 
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <div>
-                                    <small class="offer-old-amont">$250</small>  
-                                    <br>  
-                                    <h4 class="offer-new-amount">$250</h4>    
-                                </div>                                    
-                            </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                               <div class="row add-btns">
-                                <a href="#" class="count-btn" role="button" ><i class="fa fa-plus "></i></a>
-                                <span class="count-border">3</span>
-                                <a href="#" class="count-btn" role="button" ><i class="fa fa-minus "></i></a>
-                               </div>
-                            </div>
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <small class='offer-old-amont'>$250</small>
+                            <br>
+                            <h4 class='offer-new-amount'>$250</h4>
+                        </div>                            
+                        <div class='bottom'>
+                            <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <div>
-                                    <small class="offer-old-amont">$250</small>  
-                                    <br>  
-                                    <h4 class="offer-new-amount">$250</h4>    
-                                </div>                                    
-                            </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                               <div class="row add-btns">
-                                    <a href="#" class="mr-2" role="button" ><i class="fa fa-plus mr-1 "></i>Add</a>
-                               </div>
-                            </div>
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
                         </div>
-                    </div>
-                </div>        
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <div>
-                                    <small class="offer-old-amont">$250</small>  
-                                    <br>  
-                                    <h4 class="offer-new-amount">$250</h4>    
-                                </div>                                    
-                            </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                               <div class="row add-btns">
-                                    <a href="#" class="mr-2" role="button" ><i class="fa fa-plus mr-1 "></i>Add</a>
-                               </div>
-                            </div>
+                        <div>
+                            <small class='offer-old-amont'>$250</small>
+                            <br>
+                            <h4 class='offer-new-amount'>$250</h4>
+                        </div>                            
+                        <div class='bottom'>
+                            <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <div>
-                                    <small class="offer-old-amont">$250</small>  
-                                    <br>  
-                                    <h4 class="offer-new-amount">$250</h4>    
-                                </div>                                    
-                            </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                               <div class="row add-btns">
-                                    <a href="#" class="mr-2" role="button" ><i class="fa fa-plus mr-1 "></i>Add</a>
-                               </div>
-                            </div>
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <small class='offer-old-amont'>$250</small>
+                            <br>
+                            <h4 class='offer-new-amount'>$250</h4>
+                        </div>                            
+                        <div class='bottom'>
+                            <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <div>
-                                    <small class="offer-old-amont">$250</small>  
-                                    <br>  
-                                    <h4 class="offer-new-amount">$250</h4>    
-                                </div>                                    
-                            </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                               <div class="row add-btns">
-                                    <a href="#" class="mr-2" role="button" ><i class="fa fa-plus mr-1 "></i>Add</a>
-                               </div>
-                            </div>
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <small class='offer-old-amont'>$250</small>
+                            <br>
+                            <h4 class='offer-new-amount'>$250</h4>
+                        </div>                            
+                        <div class='bottom'>
+                            <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <div>
-                                    <small class="offer-old-amont">$250</small>  
-                                    <br>  
-                                    <h4 class="offer-new-amount">$250</h4>    
-                                </div>                                    
-                            </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                               <div class="row add-btns">
-                                    <a href="#" class="mr-2" role="button" ><i class="fa fa-plus mr-1 "></i>Add</a>
-                               </div>
-                            </div>
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <small class='offer-old-amont'>$250</small>
+                            <br>
+                            <h4 class='offer-new-amount'>$250</h4>
+                        </div>                            
+                        <div class='bottom'>
+                            <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <div>
-                                    <small class="offer-old-amont">$250</small>  
-                                    <br>  
-                                    <h4 class="offer-new-amount">$250</h4>    
-                                </div>                                    
-                            </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                               <div class="row add-btns">
-                                    <a href="#" class="mr-2" role="button" ><i class="fa fa-plus mr-1 "></i>Add</a>
-                               </div>
-                            </div>
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <small class='offer-old-amont'>$250</small>
+                            <br>
+                            <h4 class='offer-new-amount'>$250</h4>
+                        </div>                            
+                        <div class='bottom'>
+                            <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                         </div>
                     </div>
                 </div>
-
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <small class='offer-old-amont'>$250</small>
+                            <br>
+                            <h4 class='offer-new-amount'>$250</h4>
+                        </div>                            
+                        <div class='bottom'>
+                            <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-3">
                     <div class=" card block-food" style="background-color: azure;">
                         <div class="table">
@@ -364,7 +314,7 @@
         </div>
       </section>
 
-      <section id="food-menu" class="padd-section text-center wow fadeInUp content-padding" style="background-color: #fff;" >
+      <section class="padd-section text-center wow fadeInUp content-padding" style="background-color: #fff;" >
   
         <div class="container" >
             <div class="text-center">
@@ -373,154 +323,127 @@
             </div>
  
             <div class="row">
-
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <h4>$250</h4>    
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>$250</h4>
                             </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                <a href="#" role="button" ><i class="fa fa-plus  mr-1"></i>Add</a>
+                            <div class='bottom'>
+                                <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <h4>$250</h4>    
-                            </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                <a href="#" role="button" ><i class="fa fa-plus  mr-1"></i>Add</a>
-                            </div>
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
                         </div>
-                    </div>
-                </div> 
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <div>
-                                    <small class="offer-old-amont">$250</small>  
-                                    <br>  
-                                    <h4 class="offer-new-amount">$250</h4>    
-                                </div>                                    
+                        <div>
+                            <div>
+                                <h4>$250</h4>
                             </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                               <div class="row add-btns">
-                                    <a href="#" class="mr-2" role="button" ><i class="fa fa-plus mr-1 "></i>Add</a>
-                               </div>
+                            <div class='bottom'>
+                                <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <h4>$250</h4>    
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>$250</h4>
                             </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                <a href="#" role="button" ><i class="fa fa-plus  mr-1"></i>Add</a>
+                            <div class='bottom'>
+                                <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <div>
-                                    <small class="offer-old-amont">$250</small>  
-                                    <br>  
-                                    <h4 class="offer-new-amount">$250</h4>    
-                                </div>                                    
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>$250</h4>
                             </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                               <div class="row add-btns">
-                                    <a href="#" class="mr-2" role="button" ><i class="fa fa-plus mr-1 "></i>Add</a>
-                               </div>
+                            <div class='bottom'>
+                                <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <h4>$250</h4>    
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>$250</h4>
                             </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                                <a href="#" role="button" ><i class="fa fa-plus  mr-1"></i>Add</a>
+                            <div class='bottom'>
+                                <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="col-md-6 col-lg-3">
-                    <div class=" card block-food">
-                        <div class="table">
-                            <img src="assets/img/offers/offer-4.jpeg" class="img-responsive food-img" alt="img">
-                            <h3>Noodles</h3>
-                            <h5>Restaurent</h5>                           
-                        </div>                     
-                        <div class="d-flex flex-row" >
-                            <div class="d-flex flex-row" style="width: 50%;">
-                                <div>
-                                    <small class="offer-old-amont">$250</small>  
-                                    <br>  
-                                    <h4 class="offer-new-amount">$250</h4>    
-                                </div>                                    
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>$250</h4>
                             </div>
-                            <div class="d-flex flex-row-reverse" style="width: 50%;">
-                               <div class="row add-btns">
-                                    <a href="#" class="mr-2" role="button" ><i class="fa fa-plus mr-1 "></i>Add</a>
-                               </div>
+                            <div class='bottom'>
+                                <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div class='col-md-6 col-lg-3'>
+                    <div class=' card block-food'>
+                        <div class='table'>
+                            <img src='assets/img/offers/offer-4.jpeg' class='img-responsive food-img' alt='img'>
+                            <h4>Noodles</h4>
+                            <h6>Restaurent</h6>
+                        </div>
+                        <div>
+                            <div>
+                                <h4>$250</h4>
+                            </div>
+                            <div class='bottom'>
+                                <button class='btn btn-outline-success m-1 my-sm-0 btn-sm'  onclick='plusQty()' type='submit'><i class='fa fa-cart-plus '></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="col-md-6 col-lg-3">
                     <div class=" card block-food" style="background-color: azure;">
                         <div class="table">
@@ -578,6 +501,71 @@
         </div>
     
     </footer>
+
+    <div id="login-modal" class="modal modal-right" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="l-email" class="col-form-label">Email:</label>
+                    <input type="email" class="form-control" id="l-email">
+                </div>
+                <div class="form-group">
+                    <label for="l-mobile" class="col-form-label">Password:</label>
+                    <input type="password" class="form-control" id="l-mobile">
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Login</button>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    
+    <div id="register-modal" class="modal modal-right" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="r-name" class="col-form-label">Name:</label>
+                    <input type="text" class="form-control" id="r-name">
+                </div>
+                <div class="form-group">
+                    <label for="r-email" class="col-form-label">Email:</label>
+                    <input type="email" class="form-control" id="r-email">
+                </div>
+                <div class="form-group">
+                    <label for="r-mobile" class="col-form-label">Mobile:</label>
+                    <input type="mobile" class="form-control" id="r-mobile">
+                </div>
+                <div class="form-group">
+                    <label for="r-mobile" class="col-form-label">Password:</label>
+                    <input type="password" class="form-control" id="r-mobile">
+                </div>
+                <div class="form-group">
+                    <label for="r-mobile" class="col-form-label">Conform Password:</label>
+                    <input type="password" class="form-control" id="r-mobile">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Register</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
